@@ -1,0 +1,11 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+<div style= "width:70%; height:1000px;">
+	<div id="content1" class="wrap">Drag and resize me!</div>
+</div>
+		{% block scripts %}
+		      <script  language="JavaScript" type="text/javascript" src="{% static 'js/hand_made.js' %}"></script>
+		      <!-- <script  language="JavaScript"type="text/javascript" src="{% static 'js/addtional_script.js' %}"></script> -->
+		{% endblock scripts %}
+{% endblock content %}
